@@ -1,0 +1,58 @@
+Actividad 1 de Base de datos
+
+* ¿que es SQL? ¿para que se utiliza?
+SQL es un lenguaje estándar para almacenar, manipular y recuperar datos en bases de datos
+
+* ¿para que sirve la sentencia SELECT? escriba su estructura basica.
+El SELECTLa declaración se utiliza para seleccionar datos de una base de datos.
+SELECT column1, column2, ...
+FROM table_name;
+
+* ¿para que sirve la clausula FROM?
+El nombre de tabla representa el nombre de la tabla de la que desea seleccionar datos.
+FROM table_name;
+
+* ¿para que sirve la clausula WHERE?
+El WHEREcláusula se usa para filtrar registros.
+Se utiliza para extraer sólo los registros que cumplen un afección.
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+* Mencione y describa brevemente al menos 4 sentencias SQL
+(*1) 
+El INSERT INTOLa declaración se utiliza para insertar nuevos registros en una tabla.
+Sintaxis INTO INSERT
+
+Es posible escribir el INSERT INTOdeclaración de dos maneras:
+
+1. Especifique tanto los nombres de la columna como los valores a insertar:
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+(*2)
+ El DELETELa declaración se utiliza para borrar los registros existentes en un cuadro.
+Sintaxis DELETE
+
+DELETE FROM table_name WHERE condition;
+
+(*3)
+El SELECT TOPla cláusula se utiliza para especificar el número de registros a devolver.
+El SELECT TOPcláusula es útil en grandes mesas con miles de Registros. Devolver un gran número de registros puede
+afectar el rendimiento.
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number; 
+
+(*4)
+El NOTel operador se utiliza en combinación con otros operadores para dar el resultado contrario, también llamaron
+ el resultado negativo.
+En la siguiente declaración selecta queremos devolver a todos los clientes que NO son de España
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+
+--Usen w3schools--
